@@ -1,0 +1,45 @@
+*{
+    font-family: 'Arial Nova', 'Arial';
+}
+.main-screen_header{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67px;
+    line-height: 95%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.main-screen_header_orange{
+    color:   #FEC110;
+}
+
+.main-screen_block1{
+    margin: 80px 0 40px 0;
+}
+
+.main-screen_block2{
+    margin-bottom: 60px;
+}
+
+.main-screen_label{
+    color: #989898;
+    margin-bottom: 10px;
+}
+.main-screen_label_white{
+    color: #FFFFFF; 
+}
+.main-screen_button-service{
+    margin: 50px 0 60px 0;
+}
+.main-screen_button-service>button{
+    background-color: #FEC110;
+    border-radius: 7px;
+    width: 233px;
+    height: 60px;
+
+}
+.col-stretch {
+margin: 0;
+padding: 0;
+}
