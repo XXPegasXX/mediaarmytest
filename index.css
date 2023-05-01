@@ -4,8 +4,16 @@
 .header{
     background-color: #FFFFFF   ;
 }
-.header_full{
 
+.header_full_wrapper{
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 500ms ease;
+}
+
+.header_full_wrapper_inactive{
+    max-height: 0px;
+    transition: max-height 500ms ease;
 }
 
 .header_icons{
@@ -39,9 +47,16 @@
     height: 50px;
     border: #FFFFFF;
     background-color: #FFFFFF;
+    transition: all 500ms;
+}
+
+.menu_button_cross{
+    background-image: url(./images/Cross.svg);
+    transition: all 500ms;
 }
 
 .header_button{
+    position: relative;
     width: 146px;
     height: 40px;
     background: #FEC110;
@@ -51,12 +66,52 @@
     font-size: 13px;
     line-height: 125%;
     color: #2C2C2C;
-    transition: 500ms;
+    /*transition: width 500ms, height 500ms;*/
 }
 
 .header_button:hover{
     background-color: black;
     color: white;
+}
+
+.header_button_big{
+    position: fixed;
+    width: 276px;
+    height: 120px;
+    left: calc(100vw - 276px);
+    top: 0px;
+    border-radius: 0px 0px 0px 14px;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+.header_button_substitute {
+    display: none;
+    width: 146px;
+    height: 40px;
+    transition: 0ms;
+}
+
+.header_button_substitute_active {
+    display: block;
+    transition-delay: 500ms;
+}
+
+.menu_item{
+    display: inline-block;
+}
+
+.menu_item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FEC110;
+    transition: width 500ms;
+}
+
+.menu_item:hover::after {
+    width: 100%;
 }
 
 .main-screen_header{

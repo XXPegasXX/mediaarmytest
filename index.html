@@ -44,57 +44,62 @@
                     <button class="menu_button" type="button" id="menu_button">
                         <span class=""></span>
                     </button>
-                    <button class="header_button">Запись на сервис</button>
+                    <button class="header_button" id="header_button">Запись на сервис</button>
+                    <div class="header_button_substitute" id="header_button_substitute"></div>
                 </div>
             </div>
         </nav>
-        <div class="container header_full header_full_active">
-            <div class="row">
-                <div class="col">
-                    <h2>+7 (999) 123-45-67</h2>
-                    <p><a href="mailto:info@example.ru" class="header_mail">info@example.ru</a></p>
-                    <p>Работаем для вас:<br />Ежедневно с 9:00 до 21:00</p>
-                </div>
-                <div class="col">
-                    <h3>Автоцентры</h3>
-                    <hr class="hr" />
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="">Автосервис VOLVO</li>
-                        <li class="">Автосервис Land Rover</li>
-                        <li class="">Автосервис VAG</li>
-                        <li class="">Автосервис BMW</li>
-                        <li class="">Автосервис Mercedes</li>
-                        <li class="">Кузовной ремонт и детейлинг</li>
-                    </ul>
-                    <hr class="hr" />
-                    <h3>Личный кабинет<span class="arrow-icon"></span></h3>
-                </div>
-            </div>
-            <div class="row">
-                <p>Адрес автоцентра:<br/>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
-            </div>
-            <div class="row">
-                <p>Центр кузовного ремонта:<br/>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="header_icons">
-                        <div class="header_icon">
-                            <img src="./images/HeaderIcons/IconVkBlack.svg" alt="IconVk">
+        <div class="container">
+            <div class="header_full_wrapper header_full_wrapper_inactive" id="header_full_wrapper">
+                <div class="header_full">
+                    <div class="row">
+                        <div class="col">
+                            <h2>+7 (999) 123-45-67</h2>
+                            <p><a href="mailto:info@example.ru" class="header_mail">info@example.ru</a></p>
+                            <p>Работаем для вас:<br />Ежедневно с 9:00 до 21:00</p>
                         </div>
-                        <div class="header_icon">
-                            <img src="./images/HeaderIcons/IconInstagramBlack.svg" alt="IconInstagram">
-                        </div>
-                        <div class="header_icon">
-                            <img src="./images/HeaderIcons/IconTwitterBlack.svg" alt="IconTwitter">
-                        </div>
-                        <div class="header_icon">
-                            <img src="./images/HeaderIcons/IconYoutubeBlack.svg" alt="IconYoutube">
+                        <div class="col">
+                            <h3>Автоцентры</h3>
+                            <hr class="hr" />
+                            <ul class=" ">
+                                <li><span class="menu_item">Автосервис VOLVO</span></li>
+                                <li><span class="menu_item">Автосервис Land Rover</span></li>
+                                <li><span class="menu_item">Автосервис VAG</span></li>
+                                <li><span class="menu_item">Автосервис BMW</span></li>
+                                <li><span class="menu_item">Автосервис Mercedes</span></li>
+                                <li><span class="menu_item">Кузовной ремонт и детейлинг</span></li>
+                            </ul>
+                            <hr class="hr" />
+                            <h3>Личный кабинет<span class="arrow-icon"></span></h3>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <p>Условия конфиденциальности</p>
+                    <div class="row">
+                        <p>Адрес автоцентра:<br/>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="row">
+                        <p>Центр кузовного ремонта:<br/>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_icons">
+                                <div class="header_icon">
+                                    <img src="./images/HeaderIcons/IconVkBlack.svg" alt="IconVk">
+                                </div>
+                                <div class="header_icon">
+                                    <img src="./images/HeaderIcons/IconInstagramBlack.svg" alt="IconInstagram">
+                                </div>
+                                <div class="header_icon">
+                                    <img src="./images/HeaderIcons/IconTwitterBlack.svg" alt="IconTwitter">
+                                </div>
+                                <div class="header_icon">
+                                    <img src="./images/HeaderIcons/IconYoutubeBlack.svg" alt="IconYoutube">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Условия конфиденциальности</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -580,6 +585,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
