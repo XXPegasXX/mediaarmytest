@@ -4,9 +4,32 @@
 .header{
     background-color: #FFFFFF   ;
 }
-.navbar_full{
-    display: none;
+.header_full{
+
 }
+
+.header_icons{
+    display: flex;
+    flex-direction: row;
+    width:70px;
+    flex-wrap: nowrap;
+}
+
+.header_icon{
+    width: 70px;
+    border-radius: 50%;
+    transition: 500ms;
+    background-color: white;
+}
+
+.header_icon:hover{
+    width: 70px;
+    border-radius: 50%;
+    transition: 500ms;
+    background-color: white;
+    filter: invert(1);
+}
+
 .menu_button{
     background-image: url(./images/menuButton.svg);
     background-repeat: no-repeat;
@@ -17,6 +40,25 @@
     border: #FFFFFF;
     background-color: #FFFFFF;
 }
+
+.header_button{
+    width: 146px;
+    height: 40px;
+    background: #FEC110;
+    border-radius: 7px;
+    border: 0px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125%;
+    color: #2C2C2C;
+    transition: 500ms;
+}
+
+.header_button:hover{
+    background-color: black;
+    color: white;
+}
+
 .main-screen_header{
     font-style: normal;
     font-weight: 400;
@@ -151,7 +193,6 @@ width: 50vw;
     filter: invert(1);
     transition: 500ms;
     background-color: black;
-    
 }
 
 .footer_menu {
