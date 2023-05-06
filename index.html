@@ -14,8 +14,8 @@
 </head>
 
 <body class="page">
-    <header class="header">
-        <nav class="navbar navbar-expand-lg .bg-light-subtle container-xxl bd-gutter flex-wrap flex-lg-nowrap   ">
+    <header class="header fixed-top">
+        <nav class="header_navbar navbar navbar-expand-lg .bg-light-subtle container-xxl bd-gutter flex-wrap flex-lg-nowrap ">
             <div class="container-fluid">
                 <div>
                     <img src="./images/Logo.svg" alt="logo">
@@ -44,11 +44,17 @@
                     <button class="menu_button" type="button" id="menu_button">
                         <span class=""></span>
                     </button>
-                    <button class="header_button" id="header_button">Запись на сервис</button>
-                    <div class="header_button_substitute" id="header_button_substitute"></div>
+                    <div class="header_button_wrapper">
+                        <button class="header_button" id="header_button">Запись на сервис</button>
+                    </div>
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="header_dropdown">
+
+            </div>
+        </div>
         <div class="container">
             <div class="header_full_wrapper header_full_wrapper_inactive" id="header_full_wrapper">
                 <div class="header_full">
@@ -61,7 +67,7 @@
                         <div class="col">
                             <h3>Автоцентры</h3>
                             <hr class="hr" />
-                            <ul class=" ">
+                            <ul class="menu_items">
                                 <li><span class="menu_item">Автосервис VOLVO</span></li>
                                 <li><span class="menu_item">Автосервис Land Rover</span></li>
                                 <li><span class="menu_item">Автосервис VAG</span></li>
@@ -105,10 +111,11 @@
         </div>
     </header>
     <main class="">
-        <section class=" text-bg-dark">
+        <section class="header-spacer" style="height: 70px;"></section>
+        <section class="main-screen text-bg-dark">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col px-5 main-screen">
+                    <div class="col-6 g-0">
                         <p class="main-screen_header main-screen_block1">Специализированный Автосервис</p>
                         <p class="main-screen_header main-screen_header_orange main-screen_block2">+7 (999) 123-45-67
                         </p>
@@ -123,16 +130,8 @@
                             <button>Смотреть услуги <span class="fa fa-arrow-down"></span></button>
                         </div>
                     </div>
-                    <div class="col g-0">
+                    <div class="col-6 g-0">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="./images/Carousel1.jpg" class="d-block w-100" alt="...">
@@ -144,16 +143,28 @@
                                     <img src="./images/Carousel3.jpg" class="d-block w-100" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="clearfix">
+                                <div class="carousel-control float-start">
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <ol class="carousel-indicators carousel-indicators-numbers float-end">
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1">1/3</li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2">2/3</li>
+                                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3">3/3</li>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,17 +175,17 @@
                 <hr class="hr">
                 </hr>
                 <div class="">
-                    <p class="float-start">Главное преимущество компании</p>
-                    <p class="float-end">#1</p>
+                    <p class="float-start advantage_header">Главное преимущество компании</p>
+                    <p class="float-end advantage_header_add">#1</p>
                 </div>
             </div>
             <div class="container float-none">
                 <div class="row">
                     <div class="col">
-                        <p class="main-screen_header main-screen_header_orange main-screen_block2">Работаем <br>с 2012
+                        <p class="advantage_main_work main-screen_block2">Работаем <br>с 2012
                             года</p>
                     </div>
-                    <div class="col">
+                    <div class="col advantage_main">
                         <p>Вашим автомобилем будут заниматься люди <br>с большим опытом, полученным за многие годы
                             <br />и прошедшие множество обучений.
                             <br /><br />Сотрудники обладают огромным багажом знаний,<br /> применяемых на практике.
@@ -183,74 +194,84 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container ">
+        <section class="services">
+            <div class="container">
                 <div class="row">
                     <h2 class="services_header">Услуги автосервиса</h2>
                 </div>
-                <div class="row ">
-                    <div class="col-6  ">
-                        <div class="services_image">
-                            <img src="./images/AutoRepair/Repair.jpg" alt="Ремонт автомобиля">
-                        </div>
-                        <div class="services">
-                            <div class="services_label float-start">
-                                <p>Ремонт автомобиля</p>
-                                <p>01</p>
+                <div class="row g-5 gy-5">
+                    <div class="col-6">
+                        <div class="services_block">
+                            <div class="services_image">
+                                <img src="./images/AutoRepair/Repair.jpg" alt="Ремонт автомобиля">
                             </div>
-                            <div class="float-end"><button class="services_button "><span
-                                        class="fa fa-arrow-right"></span></button></div>
+                            <div class="services_block_info clearfix">
+                                <div class="services_label float-start">
+                                    <p class="services_label_p"><span class="services_label_name">Ремонт автомобиля</span><br/>
+                                    <span class="services_label_number">01</span></p>
+                                </div>
+                                <button class="services_button float-end">
+                                    <img src="./images/ArrowRight.svg" alt="ArrowRight">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 clearfix">
-                        <div class="services_image">
-                            <img src="./images/AutoRepair/Diagnostic.jpg" alt="Диагностика и ремонт">
-                        </div>
-                        <div class="services">
-                            <div class="services_label float-start">
-                                <p>Диагностика и ремонт</p>
-                                <p>02</p>
+                    <div class="col-6">
+                        <div class="services_block">
+                            <div class="services_image">
+                                <img src="./images/AutoRepair/Diagnostic.jpg" alt="Диагностика и ремонт">
                             </div>
-                            <div class="float-end"><button class="services_button "><span
-                                        class="fa fa-arrow-right"></span></button></div>
+                            <div class="services_block_info clearfix">
+                                <div class="services_label float-start">
+                                    <p class="services_label_p"><span class="services_label_name">Диагностика и ремонт</span><br/>
+                                        <span class="services_label_number">02</span></p>
+                                </div>
+                                <button class="services_button float-end">
+                                    <img src="./images/ArrowRight.svg" alt="ArrowRight">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 clearfix">
-                        <div class="services_image">
-                            <img src="./images/AutoRepair/TO.jpg" alt="Плановое ТО">
-                        </div>
-                        <div class="services">
-                            <div class="services_label float-start">
-                                <p>Плановое ТО</p>
-                                <p>03</p>
+                    <div class="col-6">
+                        <div class="services_block">
+                            <div class="services_image">
+                                <img src="./images/AutoRepair/TO.jpg" alt="Плановое ТО">
                             </div>
-                            <div class="float-end"><button class="services_button "><span
-                                        class="fa fa-arrow-right"></span></button></div>
+                            <div class="services_block_info clearfix">
+                                <div class="services_label float-start">
+                                    <p class="services_label_p"><span class="services_label_name">Плановое ТО</span><br/>
+                                        <span class="services_label_number">03</span></p>
+                                </div>
+                                <button class="services_button float-end">
+                                    <img src="./images/ArrowRight.svg" alt="ArrowRight">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 clearfix">
-                        <div class="services_image">
-                            <img src="./images/AutoRepair/Tuning.jpg" alt="Чип тюнинг">
-                        </div>
-                        <div class="services">
-                            <div class="services_label float-start">
-                                <p>Чип тюнинг</p>
-                                <p>04</p>
+                    <div class="col-6">
+                        <div class="services_block">
+                            <div class="services_image">
+                                <img src="./images/AutoRepair/Tuning.jpg" alt="Чип тюнинг">
                             </div>
-                            <div class="float-end"><button class="services_button "><span
-                                        class="fa fa-arrow-right"></span></button></div>
+                            <div class="services_block_info clearfix">
+                                <div class="services_label float-start">
+                                    <p class="services_label_p"><span class="services_label_name">Чип тюнинг</span><br/>
+                                        <span class="services_label_number">04</span></p>
+                                </div>
+                                <button class="services_button float-end">
+                                    <img src="./images/ArrowRight.svg" alt="ArrowRight">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <p>Обратившись к нам, в автоцентр, вы окажетесь в надёжных руках специалистов
+                        <p class="services_maintext">Обратившись к нам, в автоцентр, вы окажетесь в надёжных руках специалистов
                             послегарантийного ремонта и технического обслуживания автомобилей.</p>
-                        <p>Чтобы автомобиль всегда оставался в отличной форме,
+                        <p class="services_secondarytext">Чтобы автомобиль всегда оставался в отличной форме,
                             необходимо выполнять регулярное ТО по программе рекомендованной производителем.</p>
-                        <p>Подразделение нашей компании СЕРТИФИЦИРОВАННО -
+                        <p class="services_secondarytext">Подразделение нашей компании<br/> СЕРТИФИЦИРОВАННО -
                             это позволяет производить обслуживание вашего автомобиля С СОХРАНЕНИЕМ ГАРАНТИИ.</p>
                     </div>
                     <div class="col-6">
@@ -289,15 +310,15 @@
         </section>
         <section>
             <div class="container ">
-                <p class="">Мы работаем</p>
+                <p class="autologotypes_header">Обслуживаем и ремонтируем</p>
             </div>
             <div class="container-flex autologotypes">
                 <img src="./images/avtologotypes.svg" alt="Логотипы марок автомобилей">
             </div>
         </section>
-        <section>
+        <section class="promos">
             <div class="container">
-                <h2>Наши акции</h2>
+                <h2 class="promos_header">Наши акции</h2>
                 <div id="carouselPromo" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="0" class="active"
@@ -314,12 +335,12 @@
                                     <img src="./images/Promo/Promo1.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="col-4">
-                                    <p>Дарим 1000 бонусов за шиномонтаж <br />и хранение</p>
-                                    <p>14 апреля</p>
+                                    <p class="promos_maintext">Дарим 1000 бонусов за шиномонтаж <br />и хранение</p>
+                                    <p class="promos_data">14 апреля</p>
                                     <div class="clearfix">
-                                        <button class="services_button float-start"><span
-                                                class="fa fa-arrow-right"></span></button>
-                                        <p class="float-start">Подробнее</p>
+                                        <button class="services_button float-start">
+                                            <img src="./images/ArrowRight.svg" alt="ArrowRight"></button>
+                                        <p class="float-start promos_moreinfo">Подробнее</p>
                                     </div>
                                 </div>
                             </div>
@@ -334,8 +355,8 @@
                                     <p>Специальное предложение <br />для владельцев VOLVO&nbsp;XC&nbsp;90</p>
                                     <p>18 ноября</p>
                                     <div class="clearfix">
-                                        <button class="services_button float-start"><span
-                                                class="fa fa-arrow-right"></span></button>
+                                        <button class="services_button float-start">
+                                            <img src="./images/ArrowRight.svg" alt="ArrowRight"></button>
                                         <p class="float-start">Подробнее</p>
                                     </div>
                                 </div>
@@ -354,15 +375,16 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <div class="vr gray-vr"></div>
             </div>
         </section>
         <section class="text-bg-dark">
             <div class="container">
                 <div class="clearfix">
-                    <p class="float-start">Отзывы пользователей <br />об Автоцентре</p>
+                    <p class="float-start main-screen_header">Отзывы пользователей <br />об Автоцентре</p>
                     <div class="float-end ">
-                        <p class="float-start">4.6</p>
-                        <p class="float-end">Средняя оценка</p>
+                        <p class="float-start user_point">4.6</p>
+                        <p class="float-end user_point_label">Средняя оценка</p>
                     </div>
                 </div>
                 <hr class="hr" />
@@ -375,7 +397,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="user_review">
-                                        <img src="./images/User.svg" alt="Иконка пользователя"
+                                        <img src="./images/IconPerson.svg" alt="Иконка пользователя"
                                             class="user_review_avatar">
                                         <div class="user_review_info">
                                             <p class="user_review_info_login">butyl1n_i</p>
@@ -394,7 +416,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="user_review">
-                                        <img src="./images/User.svg" alt="Иконка пользователя"
+                                        <img src="./images/IconPerson.svg" alt="Иконка пользователя"
                                             class="user_review_avatar">
                                         <div class="user_review_info">
                                             <p class="user_review_info_login">ivanov_em</p>
@@ -426,13 +448,13 @@
         </section>
         <section class="map">
             <div class="container map_container">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row text-bg-dark">
+                    <div class="col-4 map_text">
                         <img src="./images/Entrance.jpg" alt="Entrance">
                         <p>Екатеринбург, Московский тракт 7 км, 2<br />Телефон: +7 (999) 123-45-67</p>
-                        <p>Cервис: <a href="mailto:service@example.ru">service@example.ru</a><br />
-                            Отдел запасных частей: <a href="mailto:parts@example.ru">parts@example.ru</a></p>
-                        <button>Построить маршрут<span class="fa fa-arrow-down"></span></button>
+                        <p>Cервис: <a href="mailto:service@example.ru" class="map_text_mail">service@example.ru</a><br />
+                            Отдел запасных частей: <a href="mailto:parts@example.ru" class="map_text_mail">parts@example.ru</a></p>
+                        <button class="map_button">Построить маршрут<img src="./images/ArrowRight.svg" alt="ArrowRight"><!--span class="fa fa-arrow-down"></span--></button>
                     </div>
                     <div class="col-8">
                         <iframe
@@ -450,18 +472,18 @@
                     <div style="height:180px"></div>
                     <hr class="hr bright-white-hr" />
                     <div class="">
-                        <p>Получить консультацию</p>
+                        <p class="request_consult">Получить консультацию</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <!-- This block intentionally left blank-->
                     </div>
-                    <div class="col">
+                    <div class="col request_maintext">
                         <p>Оставьте заявку, и наш мастер перезвонит вам,
                             произведет предварительную оценку стоимости услуг и запчастей, и подберет удобное время для
                             визита.</p>
-                        <button>Оставить заявку<span class="fa fa-arrow-down"></span></button>
+                        <button class="request_button">Оставить заявку<img src="./images/ArrowRight.svg" alt="ArrowRight"><span class=""></span></button>
                     </div>
                 </div>
             </div>
@@ -473,11 +495,11 @@
                         <img src="./images/iPhone.png" alt="iPhone">
                     </div>
                     <div class="col-4">
-                        <p>Скачивайте наше мобильное приложение</p>
+                        <p class="application_header">Скачивайте наше мобильное приложение</p>
                         <ul class="application_list">
-                            <li>записаться на ремонт</li>
-                            <li>просмотреть историю обслуживания</li>
-                            <li>получать постоянные акции и бонусы</li>
+                            <li class="application_list_text">записаться на ремонт</li>
+                            <li class="application_list_text">просмотреть историю обслуживания</li>
+                            <li class="application_list_text">получать постоянные акции и бонусы</li>
                         </ul>
                     </div>
                     <div class="col-4">
@@ -514,27 +536,27 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <h3>Автоцентры</h3>
+                            <h3 class="footer_header_add">Автоцентры</h3>
                             <hr class="hr" />
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                <li class="">Автосервис VOLVO</li>
-                                <li class="">Автосервис Land Rover</li>
-                                <li class="">Автосервис VAG</li>
-                                <li class="">Автосервис BMW</li>
-                                <li class="">Автосервис Mercedes</li>
-                                <li class="">Кузовной ремонт и детейлинг</li>
+                            <ul class="footer_items">
+                                <li><span class="footer_item">Автосервис VOLVO</span></li>
+                                <li><span class="footer_item">Автосервис Land Rover</span></span></li>
+                                <li><span class="footer_item">Автосервис VAG</span></li>
+                                <li><span class="footer_item">Автосервис BMW</span></li>
+                                <li><span class="footer_item">Автосервис Mercedes</span></li>
+                                <li><span class="footer_item">Кузовной ремонт и детейлинг</span></li>
 
                             </ul>
                         </div>
                         <div class="col">
-                            <h3>Услуги</h3>
+                            <h3 class="footer_header_add">Услуги</h3>
                             <hr class="hr" />
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                <li class="">Ремонт автомобиля</li>
-                                <li class="">Плановое ТО</li>
-                                <li class="">Диагностика</li>
-                                <li class="">Кузовной ремонт и детейлинг</li>
-                                <li class="">Чип тюнинг</li>
+                            <ul class="footer_items">
+                                <li><span class="footer_item">Ремонт автомобиля</span></li>
+                                <li><span class="footer_item">Плановое ТО</span></li>
+                                <li><span class="footer_item">Диагностика</span></li>
+                                <li><span class="footer_item">Кузовной ремонт и детейлинг</span></li>
+                                <li><span class="footer_item">Чип тюнинг</span></li>
 
                             </ul>
                         </div>
@@ -559,25 +581,45 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p>Адрес автоцентра:</p>
-                    <p>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
+                    <p class="footer_address_header">Адрес автоцентра:</p>
+                    <p class="footer_address_text">Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
                 </div>
                 <div class="col">
-                    <p>Центр кузовного ремонта:</p>
-                    <p>Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
+                    <p class="footer_address_header">Центр кузовного ремонта:</p>
+                    <p class="footer_address_text">Екатеринбург, ул. Московский тракт 7 км, 2<br />+7 (999) 123-45-67</p>
                 </div>
             </div>
             <div class="row">
                 <hr class="hr">
                 </hr>
                 <div class="clearfix">
-                    <p class="float-start">© 2022 Специализированный автоцентр</p>
-                    <p class="float-end">Дизайн и разработка - Media Army</p>
+                    <p class="float-start footer_text_design">© 2022 Специализированный автоцентр</p>
+                    <p class="float-end footer_text_design">Дизайн и разработка - <span class="footer_text_design_white">Media Army</span></p>
                 </div>
             </div>
         </div>
     </footer>
-
+    <div class="popup">
+        <button>Cross</button>
+        <form>
+            <p>Мы перезвоним в течение часа</p>
+            <input type="input" placeholder="Ваше имя *">
+            <input type="input" placeholder="Контактный телефон *">
+            <label>Обязательное поле</label>
+            <select>
+                <option value="" disabled selected >Марка автомобиля *</option>
+                <option value="1">Volvo</option>
+                <option value="2">BMW</option>
+                <option value="3">Audi</option>
+                <option value="4">Volkswagen</option>
+                <option value="5">Skoda</option>
+                <option value="6">Другой</option>
+            </select>
+            <input type="input" placeholder="Краткое описание проблемы">
+            <p>Нажимая кнопку «Отправить заявку» вы даете<br/> согласие на Обработку персональных данных</p>
+            <button type="button">Отправить заявку</button>
+        </form>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
