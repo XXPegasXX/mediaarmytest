@@ -753,23 +753,21 @@ color: #FFFFFF;
 
 .appointment_form_wrapper{
     position: absolute;
-    width: calc(50vw+100px);
-    left: 100vw;
-    transition: left 0.8s ease-in-out;
+    right: -70vw;
+    transition: all 1.2s;
 }
 
 .appointment_form_wrapper_active{
-    left: 50vw;
+    right: 0;
 }
 
-.appointment_popup_close_btn {
+.appointment_popup_close_btn{
     position: absolute;
     width: 100px;
-    left: -100px;
+    right: 50vw;
 }
 
 .appointment_form{
-    right: 0;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;

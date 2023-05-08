@@ -109,9 +109,10 @@
                 </div>
             </div>
         </div>
-        <div class="popup clearfix" id="appointmentPopup">
-            <div class="appointment_form_wrapper" id="appointmentFormWrapper">
-                <form name="appointmentForm" class="appointment_form float-end">
+        <div class="popup popup_active" id="appointmentPopup">
+            <div class="appointment_form_wrapper appointment_form_wrapper_active" id="appointmentFormWrapper">
+                <button type="button" class="appointment_popup_close_btn" id="appointmentPopupCloseBtn">Cross</button>
+                <form name="appointmentForm" class="appointment_form">
                     <p>Запись на сервис</p>
                     <input type="input" placeholder="Ваше имя *">
                     <label>Обязательное поле</label>
@@ -132,7 +133,7 @@
                     <p>Нажимая кнопку «Отправить заявку» вы даете<br/> согласие на Обработку персональных данных</p>
                     <button type="button">Отправить заявку</button>
                 </form>
-                <button type="button" class="appointment_popup_close_btn float-end" id="appointmentPopupCloseBtn">Cross</button>
+                
             </div>
         </div>
     </header>
