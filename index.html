@@ -109,6 +109,32 @@
                 </div>
             </div>
         </div>
+        <div class="popup clearfix" id="appointmentPopup">
+            <div class="appointment_form_wrapper" id="appointmentFormWrapper">
+                <form name="appointmentForm" class="appointment_form float-end">
+                    <p>Запись на сервис</p>
+                    <input type="input" placeholder="Ваше имя *">
+                    <label>Обязательное поле</label>
+                    <input type="input" placeholder="Контактный телефон *">
+                    <label>Обязательное поле</label>
+                    <select>
+                        <option value="" disabled selected >Марка автомобиля *</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="volkswgaen">Volkswagen</option>
+                        <option value="skoda">Skoda</option>
+                        <option value="other">Другой</option>
+                    </select>
+                    <label>Обязательное поле</label>
+                    <textarea placeholder="Краткое описание проблемы"></textarea>
+                    <label>Обязательное поле</label>
+                    <p>Нажимая кнопку «Отправить заявку» вы даете<br/> согласие на Обработку персональных данных</p>
+                    <button type="button">Отправить заявку</button>
+                </form>
+                <button type="button" class="appointment_popup_close_btn float-end" id="appointmentPopupCloseBtn">Cross</button>
+            </div>
+        </div>
     </header>
     <main class="">
         <section class="header-spacer" style="height: 70px;"></section>
@@ -599,27 +625,7 @@
             </div>
         </div>
     </footer>
-    <div class="popup">
-        <button>Cross</button>
-        <form>
-            <p>Мы перезвоним в течение часа</p>
-            <input type="input" placeholder="Ваше имя *">
-            <input type="input" placeholder="Контактный телефон *">
-            <label>Обязательное поле</label>
-            <select>
-                <option value="" disabled selected >Марка автомобиля *</option>
-                <option value="1">Volvo</option>
-                <option value="2">BMW</option>
-                <option value="3">Audi</option>
-                <option value="4">Volkswagen</option>
-                <option value="5">Skoda</option>
-                <option value="6">Другой</option>
-            </select>
-            <input type="input" placeholder="Краткое описание проблемы">
-            <p>Нажимая кнопку «Отправить заявку» вы даете<br/> согласие на Обработку персональных данных</p>
-            <button type="button">Отправить заявку</button>
-        </form>
-    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
