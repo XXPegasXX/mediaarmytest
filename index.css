@@ -774,3 +774,11 @@ color: #FFFFFF;
     width: 50vw;
     height: 100vh;
 }
+
+.validation_error_label{
+    display: none;
+} 
+
+.validation_error_label_active {
+    display: block;
+}

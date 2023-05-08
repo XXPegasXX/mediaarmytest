@@ -109,16 +109,16 @@
                 </div>
             </div>
         </div>
-        <div class="popup popup_active" id="appointmentPopup">
-            <div class="appointment_form_wrapper appointment_form_wrapper_active" id="appointmentFormWrapper">
+        <div class="popup" id="appointmentPopup">
+            <div class="appointment_form_wrapper" id="appointmentFormWrapper">
                 <button type="button" class="appointment_popup_close_btn" id="appointmentPopupCloseBtn">Cross</button>
                 <form name="appointmentForm" class="appointment_form">
                     <p>Запись на сервис</p>
-                    <input type="input" placeholder="Ваше имя *">
-                    <label>Обязательное поле</label>
-                    <input type="input" placeholder="Контактный телефон *">
-                    <label>Обязательное поле</label>
-                    <select>
+                    <input type="input" placeholder="Ваше имя *" id="appointmentFormName">
+                    <span class="validation_error_label" id="appointmentFormNameError">Обязательное поле</span>
+                    <input type="input" placeholder="Контактный телефон *" id="appointmentFormPhone">
+                    <span class="validation_error_label" id="appointmentFormPhoneError">Обязательное поле</span>
+                    <select id="appointmentFormVendor">
                         <option value="" disabled selected >Марка автомобиля *</option>
                         <option value="volvo">Volvo</option>
                         <option value="bmw">BMW</option>
@@ -127,11 +127,11 @@
                         <option value="skoda">Skoda</option>
                         <option value="other">Другой</option>
                     </select>
-                    <label>Обязательное поле</label>
-                    <textarea placeholder="Краткое описание проблемы"></textarea>
-                    <label>Обязательное поле</label>
+                    <span class="validation_error_label" id="appointmentFormVendorError">Обязательное поле</span>
+                    <textarea placeholder="Краткое описание проблемы" id="appointmentFormDescription"></textarea>
+                    <span class="validation_error_label" id="appointmentFormDescriptionError">Обязательное поле</span>
                     <p>Нажимая кнопку «Отправить заявку» вы даете<br/> согласие на Обработку персональных данных</p>
-                    <button type="button">Отправить заявку</button>
+                    <button type="button" id="appointmentFormSendBtn">Отправить заявку</button>
                 </form>
                 
             </div>
