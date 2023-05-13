@@ -17,40 +17,66 @@ const appointmentFormVendorError = document.getElementById("appointmentFormVendo
 const appointmentFormDescription = document.getElementById("appointmentFormDescription");
 const appointmentFormDescriptionError = document.getElementById("appointmentFormDescriptionError");
 
+const appointmentFormSendBtn = document.getElementById("appointmentFormSendBtn");
 
-appointmentFormNameValidate = function () {
+const appointmentFormNameValidate = function () {
     if (appointmentFormName.value =="") {
-        appointmentFormNameError.classList.add("validation_error_label_active");
+        appointmentFormName.classList.add("is-invalid");
         return false;
     } else {
-        appointmentFormNameError.classList.remove("validation_error_label_active");
+        appointmentFormName.classList.remove("is-invalid");
         return true;
     }
 }
 appointmentFormName.onchange = appointmentFormNameValidate;
 
-appointmentFormPhone.onchange = function () {
+const appointmentFormPhoneValidate = function () {
     if (appointmentFormPhone.value =="") {
-        appointmentFormPhoneError.classList.add("validation_error_label_active");
+        appointmentFormPhone.classList.add("is-invalid");
+        return false;
     } else {
-        appointmentFormPhoneError.classList.remove("validation_error_label_active");
+        appointmentFormPhone.classList.remove("is-invalid");
+        return true;
     }
 }
 
-appointmentFormVendor.onchange = function () {
+appointmentFormPhone.onchange = appointmentFormPhoneValidate;
+
+const appointmentFormVendorValidate = function () {
     if (appointmentFormVendor.value =="") {
-        appointmentFormVendorError.classList.add("validation_error_label_active");
+        appointmentFormVendor.classList.add("is-invalid");
+        return false;
     } else {
-        appointmentFormVendorError.classList.remove("validation_error_label_active");
+        appointmentFormVendor.classList.remove("is-invalid");
+        return true;
     }
 }
 
-appointmentFormDescription.onchange = function () {
+appointmentFormVendor.onchange = appointmentFormVendorValidate;
+
+const appointmentFormDescriptionValidate = function () {
     if (appointmentFormDescription.value =="") {
-        appointmentFormDescriptionError.classList.add("validation_error_label_active");
+        appointmentFormDescription.classList.add("is-invalid");
+        return false;
     } else {
-        appointmentFormDescriptionError.classList.remove("validation_error_label_active");
+        appointmentFormDescription.classList.remove("is-invalid");
+        return true;
     }
+}
+
+appointmentFormDescription.onchange = appointmentFormDescriptionValidate;
+
+appointmentFormSendBtn.onclick = function(){
+    let nameIsValid = appointmentFormNameValidate();
+    let phoneIsValid =  appointmentFormPhoneValidate();
+    let vendorIsValid =  appointmentFormVendorValidate();
+    let textIsValid = appointmentFormDescriptionValidate();
+    if (nameIsValid &&
+        phoneIsValid &&
+        vendorIsValid &&
+        textIsValid) {
+        console.log("Send data")
+        }
 }
 
 // someBtn.onclick = function() {
