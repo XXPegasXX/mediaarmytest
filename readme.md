@@ -3,4 +3,4 @@
 Это тестовая работа для компании МедиаАрмия
 
 Верстка на GithubPages: <br/>
-https://xxpegasxx.github.io/mediaarmytest/
+https://ivanovem.github.io/mediaarmytest/
